@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>I'm QQ - 每一天，乐在沟通</title>
+	<style>
+	html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
+		margin:0;
+		padding:0;
+		font-family:"microsoft yahei", "宋体", Tahoma, Verdana, Arial, Helvetica, sans-serif; 
+		font-size:100%;
+	}
+	html,body{
+		color:#333
+	}
+	body{
+		background:#fff;
+	}
+	ul,ol,li{ 
+		list-style:none;
+	}
+	a:link, a:visited{ 
+		color:#333; 
+		text-decoration:none;
+	}
+	a:hover{ 
+		color:#666;
+	}
+	img{ 
+		border:none;
+	}
+	em{ 
+		font-style:normal;
+	}
+	h1,h2,h3,h4,h5{
+		font-weight:normal;
+	}
+	.clearfloat:after{ 
+		content:'.';
+		display:block;
+		overflow:hidden;
+		visibility:hidden;
+		font-size:0;
+		line-height:0;
+		width:0;
+		height:0;
+	}
+	.clearfloat{
+		zoom:1;
+	}
+/* top */
+	.max1600{
+		max-width:1600px; 
+		min-width:1007px; 
+		margin:0 auto;
+	}
+	.htop{ 
+		width:100%; 
+		height:76px; 
+		background:#fff;
+	}
+	.top2013{ 
+		max-width:1280px; 
+		min-width:1007px;
+	    width:80%; 
+	    height:76px; 
+	    margin:0 auto;
+	}
+	.topBar{ 
+		float:left; 
+		width:59%;
+	}
+	.topBar h1{ 
+		float:left; 
+		width:24%; 
+		overflow:hidden;
+	}
+	.topBar h1 a{ 
+		display:block; 
+		width:123px; 
+		height:0px; 
+		overflow:hidden; 
+		padding-top:76px; 
+		font-size:0; 
+		background:transparent url(images/qlogo.png) no-repeat left 12px;
+	}
+	.topNav{ 
+		float:left; 
+		width:76%;
+	}
+	.topNav li{ 
+		float:left; 
+		width:25%; 
+		height:76px; 
+		*width:24.9%;
+	}
+	.topNav li a{ 
+		display:block; 
+		border-left:1px solid #ebebeb; 
+		text-align:center; 
+		line-height:76px; 
+		font-size:1.125em;
+	}
+	.topNav li.help a{ 
+		border-right:1px solid #ebece7; 
+	}
+	.topNav li.help span{ 
+		padding-right:21px; 
+		background:transparent url(images/drop.png) no-repeat right center;
+	}
+	.topNav .back{ 
+		position:absolute; 
+		background:#039ae3; 
+		height:7px; 
+		top:0; 
+		padding-top:0; 
+		font-size:0; 
+		line-height:0;
+	}
+	.topTool{ 
+		float:right; 
+		width:41%; 
+		overflow:hidden; 
+		font-size:0.75em;
+	}
+	.topTool div{ 
+		width:100%; 
+		text-align:right;
+	}
+	.topTool .login{ 
+		height:43px; 
+		line-height:43px;
+	}
+	.topTool .login span{ 
+		padding:0 18px;
+	    color:#cecece;
+	}
+	.login a:link, .login:visited{ 
+		color:#333;
+	}
+	.login a:hover{ 
+		color:#666;
+	}
+	.topTool .flashData{ 
+		line-height:17px;
+	}
+	.Data a{ 
+		padding-left:25px; 
+		background:transparent url(images/xymap.png) no-repeat left center;
+	}
+	.Data a:link, .Data a:visited{ 
+		color:#666;
+	}
+	.Data a:hover{ 
+		color:#333; 
+		text-decoration:underline;
+	}
+	.topNav li.help .helplist{ 
+		position:absolute; 
+		width:100%; 
+		top:76px; 
+		display:none; 
+		z-index:9999; 
+		box-shadow:0px 1px 1px #999; 
+		*border-bottom:1px solid #ebebeb;
+	}
+	.topNav li.help .helplist a{ 
+		display:block; 
+		width:auto; 
+		text-align:left;
+	    height:35px; 
+	    background:#fff; 
+	    border:none; 
+	    line-height:35px; 
+	    padding-left:26px; 
+	    font-size:0.875em;
+	}
+	.topNav li.help .helplist a:hover{ 
+		background:#55bdff; 
+		color:#fff;
+	}
+	#loginInfo{
+    padding:0 5px; 
+    font-family:Tahoma, "微软雅黑", "宋体";
+	}
+	#loginInfo img{ 
+		width:25px; 
+		height:25px; 
+		vertical-align:middle;
+	}
+/* banner */
+	.banner2013{ 
+		max-width:1600px;
+		 min-width:1007px; 
+		 max-height:558px; 
+		 margin:0 auto;
+		}
+	.sideShow{ 
+		width:100%; 
+		height:430px; 
+		background:#fff; 
+		z-index:1; 
+		position:relative; 
+		margin:0 auto;
+	}
+	.sideShow div{ 
+		position:absolute;
+		max-height:430px; 
+		width:100%; 
+		display:none;
+	}
+	.sideShow img{ 
+		width:100%;
+	}
+	.circle{ 
+		width:100%; 
+		height:40px; 
+		padding-top:8px; 
+		position:relative; 
+		clear:both;
+	}
+	.circle ul{ 
+		width:100%; 
+		text-align:center;
+	}
+	.circle li.on{  
+		background:transparent url(images/active.png) no-repeat center center;
+	}
+	.circle li{ 
+		display:inline; 
+		padding:5px 3px; 
+		margin:0 2px; 
+		background:transparent url(images/normal.png) no-repeat center center; 
+		cursor:pointer;
+	}
+/* figure */
+	.figures{
+		max-width:1280px; 
+		min-width:1004px; 
+		width:80%; 
+		max-height:219px; 
+		position:relative; 
+		overflow:hidden; 
+		margin: 0 auto;
+	}
+	.figures ul{ 
+		width:100%;
+	}
+	.figures li{ 
+		position:relative; 
+		float:left; 
+		width:24.9%; 
+		max-width:318px;
+	}
+	.figures li .sfea{ 
+		display:block; 
+		height:200px; 
+		overflow:hidden; 
+		position:relative; 
+		border-right:1px solid #fff; 
+		border-left:1px solid #fff;
+	}
+	.figures li .ovbg, .figures li strong, .figures li em{ 
+		position:absolute; 
+		left:0;
+	}
+	.figures li .ovbg{
+		bottom: 0;  
+		width:100%; 
+		height:53px; 
+		background:#000; 
+		opacity:0.6;
+	    z-index:10; 
+	    *filter:alpha(opacity=60);}
+	.figures li strong{
+		bottom:27px;  
+		padding-left:10px; 
+		font-size:1em; 
+		color:#fff; 
+		z-index:20; 
+		font-weight:normal;
+	}
+	.figures li em{
+		bottom:5px; 
+		height:21px; 
+		padding-left:10px; 
+		line-height:21px; 
+		color:#fff; 
+		font-size:0.75em; 
+		z-index:20;
+	}
+	.figures li img{
+		width:100%;
+	}
+	.figures li .imgcut{ 
+		display:block; 
+		width:100%; 
+		height:100%;
+	}
+	.figures li .manage{ 
+		border-left:1px solid #fff; 
+	}
+	.figures li .minibar{ 
+		display:block; 
+		position:absolute; 
+		left:0; top:0;
+	    width:100%; 
+	    height:100%; 
+	    overflow:hidden; 
+	    text-indent:-9999px;
+	    background:#fff; 
+	    z-index:500; 
+	    cursor:pointer; 
+	    opacity:0; 
+	    *filter:alpha(opacity=0);}
+	a.minibar:hover{ 
+		display:block;
+	}
+	.manage{ 
+		background:#039ae3;
+	}
+	.manage a{ 
+		display:block; 
+		background:transparent url(images/manage.jpg) no-repeat 29px 37px;
+	}
+	.manage a:link, .manage a:visited{ 
+		color:#fff;
+	}
+	.manage a.reg{ 
+		height:54px; 
+		padding:27px 0 0 66px; 
+		font-size:1.875em;
+	}
+	.manage a.prot, .manage a.forget, .manage a.huifu{ 
+		padding-left:66px; line-height:35px;}
+	.manage a.prot{ 
+		background-position:29px -43px;
+	}
+	.manage a.forget{ 
+		background-position:29px -78px;
+	}
+	.manage a.huifu{ 
+		height:47px; 
+		background-position:29px -113px; 
+		padding-bottom:2px;
+	}  
+/* footer */
+	.foot2013{ 
+		padding-top:35px; 
+		text-align:center; 
+		line-height:23px; 
+		color:#818181; 
+		font-size:0.75em;
+	}
+	.foot2013 dt, .foot2013 dd{ 
+		display:inline;
+	}
+	.foot2013 dd span{ 
+		color:#c7c7c7; 
+		padding:0 10px;
+	}
+	</style>
+</head>
+<body>
+<!--header-->
+<div class="htop">
+    <div class="top2013">
+        <div class="topBar">
+            <h1><a id="logoLink" href="http://im.qq.com/index.shtml" class="pngFix forTcss" name="im.index.logo">im.qq.com</a></h1>
+            <ul id="topNav" class="topNav">
+                <li class="home current"><a class="forTcss" name="im.index.homepage" href="http://im.qq.com/index.shtml">首页</a></li>
+                <li class="download"><a class="forTcss" name="im.index.download" href="http://im.qq.com/download/pc.shtml">下载</a></li>
+                <li class="impress"><a class="forTcss" name="im.index.impress" href="http://im.qq.com/impress/qqbanner.shtml">QQ印象</a></li>
+                <li class="help">
+                	<a href="http://kf.qq.com/product/QQ.html"><span>帮助反馈</span></a>
+                    <div id="helplist" class="helplist">
+                    	<a class="forTcss" name="im.index.safe" href="http://aq.qq.com/" target="_blank">安全中心</a>
+                        <a class="forTcss" name="im.index.custom" href="http://kf.qq.com/product/QQ.html" target="_blank">腾讯客服</a>
+                        <a class="forTcss" name="im.index.support" href="http://support.qq.com/discuss/44_1.shtml" target="_blank">产品交流</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="topTool">
+    <div class="login"><em id="loginInfo"></em><a class="forTcss" name="im.qq.com.login" id="login" href="http://w.qq.com/">登录</a><span>|</span><a class="forTcss" name="im.qq.com.International" href="http://www.imqq.com" target="_blank">QQ International</a><span>|</span><a class="forTcss" name="im.qq.com.connect" href="http://connect.qq.com/" target="_blank">QQ 互联</a>
+    </div>
+    <div class="Data"><a class="forTcss" name="im.qq.com.viewonlinedata" id="viewOnline" href="#">当前在线用户：<em id="cur_online">206,205,439</em> 最高在线用户：<em id="max_online">217,446,390</em></a>
+    </div>
+</div>
+
+    </div>
+</div>
+
+<!--banner-->
+<div id="bannerShow" class="banner2013">
+    <div class="sideShow">
+        <ul id="slide_img_wrap">
+    		<li><a target="_blank" name="bing_banner_image" href="http://im.qq.com/mobileqq/"><img src ="first.jpg" /></a></li>
+    		<li style="display:none;"><a target="_blank" name="bing_banner_image" href="http://im.qq.com/pcqq/"><img src="second.jpg" /></a></li>
+    		<li style="display:none;"><a target="_blank" name="bing_banner_image" href="http://im.qq.com/windowstabletqq/"><img src="third.jpg" /></a></li>
+    		<li style="display:none;"><a target="_blank" name="bing_banner_image" href="http://im.qq.com/qqhd/"><img src="forth.jpg" /></a></li>
+    	</ul>
+    </div>
+    <div class="circle">
+    	<ul id="inner">
+            <li class="on">&nbsp;</li>
+            <li>&nbsp;</li>
+            <li>&nbsp;</li>
+            <li>&nbsp;</li>
+        </ul>
+    </div>
+</div>
+
+<!--figure-->
+<div class="max1600">
+    <div id="figures" class="figures">
+        <ul>
+            <li>     	
+                <div class="sfea">
+                    <span class="imgcut"><a class="forTcss" name="im.index.smallpic_pcqq" href="http://im.qq.com/pcqq/" target="_blank"><img src="http://im-img.qq.com/home/img/sbanner/qq5s.jpg" alt="QQ 6.6" /></a></span>
+                    <strong>QQ 6.6</strong>
+                    <em>全新视觉，更轻更薄更高效</em>
+                    <span class="ovbg">&nbsp;</span>
+                </div>
+                
+            </li>
+            <li>
+            	
+                <div class="sfea">
+                    <span class="imgcut"><a class="forTcss" name="im.index.smallpic_mobile50" href="http://im.qq.com/mobileqq/" target="_blank"><img src="http://im-img.qq.com/home/img/sbanner/qq_5.jpg" alt="QQ手机版" /></a></span>
+                    <strong>QQ 手机版</strong>
+                    <em>想怎么聊，就怎么聊</em>
+                    <span class="ovbg">&nbsp;</span>
+                </div>
+                
+            </li>
+            <li>
+            	
+                <div class="sfea">
+                    <span class="imgcut"><a class="forTcss" name="im.index.smallpic_mac" href="http://im.qq.com/macqq/index.shtml" target="_blank"><img src="http://im-img.qq.com/home/img/q2013/s08.png" alt="QQ for MAC" /></a></span>
+                    <strong>QQ Mac版</strong>
+                    <em>给自己多一种可能</em>
+                    <span class="ovbg">&nbsp;</span>
+                </div>
+            </li>
+            <li>
+                <div class="manage">
+                	<a href="http://zc.qq.com/chs/index.html" class="reg forTcss" name="im.index.signup" title="注册QQ帐号" target="_blank">注册QQ帐号</a>
+                    <a href="http://aq.qq.com/cn2/manage/my_mb" class="prot forTcss" name="im.index.my_mb" title="申请密码保护" target="_blank">申请密码保护</a>
+                    <a href="https://aq.qq.com/cn2/findpsw/pc/pc_find_pwd_input_account" class="forget forTcss" name="im.index.findpassword" title="找回QQ密码" target="_blank">找回QQ密码</a>
+                    <a href="http://huifu.qq.com/" class="huifu forTcss" name="im.index.recover" title="恢复好友和群" target="_blank">恢复好友和群</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--footer-->
+<div class="foot2013">
+	<dl>
+    	<dt>友情链接：</dt>
+        <dd><a class="forTcss" name="im.pagefoot.impd" href="http://impd.tencent.com/" target="_blank">QQ技术分享</a><span>|</span><a class="forTcss" name="im.pagefoot.connect" href="http://connect.qq.com/" target="_blank">QQ互联</a><span>|</span><a class="forTcss" name="im.pagefoot.zb" href="http://zb.qq.com/" target="_blank">QQ装扮</a><span>|</span><a class="forTcss" name="im.pagefoot.y" href="http://y.qq.com/" target="_blank">QQ音乐</a><span>|</span><a class="forTcss" name="im.pagefoot.exp" href="http://exp.qq.com/" target="_blank">腾讯体验中心</a></dd>
+    </dl>
+    <p>Copyright &copy; 1998-2014 Tencent. All Rights Reserved.</p>
+    <p>腾讯公司 版权所有</p>
+</div>
+<script type="text/javascript">
+		var cont = document.getElementById("slide_img_wrap").getElementsByTagName("li"),
+	    navi = document.getElementById("inner").getElementsByTagName("li"),
+	    index,slideTimer;
+	    
+		var getCurIndex = function()
+		{
+			for(var a=0;a<navi.length;a++)
+			{
+				if(navi[a].className.indexOf("on")!=-1)
+				    return a;
+			}
+		}
+		var show = function(index)
+		{
+            for(var t=0;t<navi.length;t++)
+		        {
+		        	cont[t].style.display = "none";
+		        	navi[t].className = "";
+		        }
+			cont[index].style.display = "";
+			navi[index].className = "on";
+		}
+		var auto_slide = function(s)
+		{
+			index=getCurIndex();
+			if(s)
+			{
+				index++;
+				if(index >= navi.length)
+					index = 0;
+			}
+			show(index);
+		}
+		var autoTabStart = function()
+		{
+		    slideTimer = setInterval(function(){auto_slide(true);},3000);
+		}
+		var autoTapStop = function()
+		{
+		 	clearInterval(slideTimer);
+		}
+		for (var i=0;i<navi.length;i++)
+	    {
+	        var navi_item = navi[i];
+	        navi_item.onclick = function()
+	        {
+	        	autoTapStop();
+	          	index = 0;
+	          	for(var j=0;j<navi.length;j++)
+	          	{
+	          		if(this==navi[j])
+	          		{
+	          			index = j;
+	          			break;
+	          		}
+	          	}
+	          	show(index);
+	          	setTimeout(autoTabStart(),3000);
+	        }  
+		}
+</script>
+</body>
+</html>
